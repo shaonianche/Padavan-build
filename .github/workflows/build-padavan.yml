@@ -2,14 +2,15 @@
 # https://github.com/chongshengB/rt-n56u.git
 name: Build Padavan
 
-on: 
+on:
+  workflow_dispatch: 
   release:
     types: [published]
   push:
     tags:
     - 'v*'
-  #  branches: 
-  #    - master
+#    branches: 
+#      - master
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
